@@ -1,0 +1,35 @@
+.sidebar {
+  //background-color: lightcoral;
+  flex: 1;
+  border-right: 0.5px solid rgb(219, 216, 216);
+  min-height: 100vh;
+  background-color: white;
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      color: purple;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(219, 216, 216);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .home {
-  background-color: red;
-  .title {
-    color: white;
+  display: flex; // since home container is below side bar with this it will make it next to each other
+
+  .homeContainer {
+    flex: 6; // to increase the size of container
   }
 }
