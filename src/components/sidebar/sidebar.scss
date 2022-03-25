@@ -1,7 +1,7 @@
 .sidebar {
   //background-color: lightcoral;
   flex: 1;
-  border-right: 0.5px solid rgb(219, 216, 216);
+  border-right: 0.5px solid rgb(219, 216, 216); // to draw the line
   min-height: 100vh;
   background-color: white;
 
@@ -30,6 +30,58 @@
       margin: 0;
       padding: 0;
       list-style: none;
+
+      .title {
+        font-size: 10px;
+        font-weight: bold;
+        color: grey;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ece8ff;
+        }
+
+        .icon {
+          font-size: 18px;
+          color: purple;
+        }
+
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          margin-left: 5px;
+          color: grey;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    .colorOption {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid purple;
+      cursor: pointer;
+      margin: 5px;
+
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+      &:nth-child(2) {
+        background-color: #333;
+      }
     }
   }
 }
